@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Día</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Agrega estilos de animación */
+      @keyframes rotateLeftRight {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(-10deg);
+        }
+        100% {
+          transform: rotate(10deg);
+        }
+      }
+
+      /* Aplica la animación a la imagen */
+      #capi {
+        height: 80vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: rotateLeftRight 4s linear infinite alternate;
+        /* Cambia el valor de "4s" para ajustar la velocidad de la animación */
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh; overflow: hidden;">
+      <img
+        id="capi"
+        src="capiYellow.png"
+        alt="capiYellow"
+      />
+    </div>
+  </body>
+</html>
